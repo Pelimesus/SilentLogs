@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "silentlogs",
+	"version": "1.0.0",
+	"name": "SilentLogs",
+	"description": "A Fabric mod for filtering and modifying client connection logs.",
+	"authors": [
+		"Pelimesus"
+	],
+	"contact": {
+		"sources": "https://github.com/YourUsername/SilentLogs"
+	},
+	"license": "MIT",
+	"icon": "assets/silentlogs/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.logcleaner.LogCleaner"
+		]
+	},
+	"mixins": [
+		"silentlogs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.21.4",
+		"java": ">=21"
+	}
+}
